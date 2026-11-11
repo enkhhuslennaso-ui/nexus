@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="NEXUS Premium Discord Studio">
+  <title>NEXUS — Premium Digital Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="header">
+    <nav class="container navbar">
+      <a href="#home" class="logo">
+        <span class="logo-mark">✦</span> NEXUS<span class="dot">.</span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Цэс нээх" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Нүүр</a>
+        <a href="#services">Үйлчилгээ</a>
+        <a href="#process">Процесс</a>
+        <a href="#request">Захиалга</a>
+        <a href="#orders">Миний хүсэлт</a>
+        <a href="#admin" id="adminLink" hidden>Admin</a>
+      </div>
+      <div class="account">
+        <span id="userName"></span>
+        <button id="loginBtn" class="btn btn-primary">Google Login</button>
+        <button id="logoutBtn" class="btn btn-outline" hidden>Гарах</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="eyebrow"><span class="online-dot"></span> PREMIUM DIGITAL DEVELOPMENT STUDIO</div>
+      <h1>WE BUILD THE<br><span class="gradient-text">NEXT GENERATION.</span></h1>
+      <p class="hero-description">
+        Discord сервер, custom bot, вебсайт болон график дизайны
+        орчин үеийн шийдлүүдийг нэг дороос.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">Үйлчилгээ үзэх ↗</a>
+        <a href="#request" class="btn btn-outline">Төсөл эхлүүлэх</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>04</strong><span>Үйлчилгээ</span></div>
+        <div><strong>V7</strong><span>Premium Platform</span></div>
+        <div><strong>100%</strong><span>Custom Focus</span></div>
+      </div>
+      <div class="orbit"><div class="orbit-ring"></div><div class="orbit-core">✦</div></div>
+    </section>
+
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <span class="eyebrow">WHAT WE OFFER</span>
+        <h2>Premium <span class="gradient-text">Services</span></h2>
+        <p>Таны санааг бодит дижитал шийдэл болгоно.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">#</div>
+          <span class="category">DISCORD DEVELOPMENT</span>
+          <h3>Discord Channel Setup</h3>
+          <p>Role, category, channel, permission болон community зохион байгуулалт.</p>
+          <ul><li>Custom Channel Structure</li><li>Roles & Permissions</li><li>Welcome & Rules</li><li>Premium Server Layout</li></ul>
+          <div class="card-bottom"><div class="price"><small>Эхлэх үнэ</small><strong>20,000₮</strong></div><button class="btn btn-primary choose" data-service="channels">Захиалах ↗</button></div>
+        </article>
+
+        <article class="service-card featured">
+          <div class="popular">POPULAR</div>
+          <div class="service-icon">⚡</div>
+          <span class="category">AUTOMATION</span>
+          <h3>Custom Discord Bot</h3>
+          <p>Таны серверийн хэрэгцээнд тохирсон тусгай команд, автоматжуулалт.</p>
+          <ul><li>Slash Commands</li><li>Moderation & Logging</li><li>Welcome System</li><li>Custom Features</li></ul>
+          <div class="card-bottom"><div class="price"><small>Эхлэх үнэ</small><strong>40,000₮+</strong></div><button class="btn btn-primary choose" data-service="bot">Захиалах ↗</button></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">◈</div>
+          <span class="category">WEB DEVELOPMENT</span>
+          <h3>Premium Website</h3>
+          <p>Бизнес болон community-д зориулсан responsive вебсайт.</p>
+          <ul><li>Modern UI/UX</li><li>Mobile Responsive</li><li>Custom Pages</li><li>Deployment Support</li></ul>
+          <div class="card-bottom"><div class="price"><small>Эхлэх үнэ</small><strong>150,000₮+</strong></div><button class="btn btn-primary choose" data-service="website">Захиалах ↗</button></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✧</div>
+          <span class="category">CREATIVE DESIGN</span>
+          <h3>Graphic Design</h3>
+          <p>Лого, постер, сошиал контент болон брэндийн визуал дизайн.</p>
+          <ul><li>Logo Concepts</li><li>Social Media Posters</li><li>Brand Visuals</li><li>Custom Graphics</li></ul>
+          <div class="card-bottom"><div class="price"><small>Эхлэх үнэ</small><strong>25,000₮+</strong></div><button class="btn btn-primary choose" data-service="design">Захиалах ↗</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="process">
+      <div class="section-heading">
+        <span class="eyebrow">HOW IT WORKS</span>
+        <h2>Simple. Fast. <span class="gradient-text">Professional.</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>Google Login</h3><p>Google аккаунтаар нэвтэрнэ.</p></div>
+        <div class="step"><span>02</span><h3>Project Request</h3><p>Үйлчилгээ сонгон хүсэлт илгээнэ.</p></div>
+        <div class="step"><span>03</span><h3>Admin Review</h3><p>Админ хүсэлтийг шалгана.</p></div>
+        <div class="step"><span>04</span><h3>Email Response</h3><p>Хариуг имэйлээр хүлээн авна.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="request">
+      <div class="section-heading">
+        <span class="eyebrow">START YOUR PROJECT</span>
+        <h2>Project <span class="gradient-text">Request</span></h2>
+        <p>Google аккаунтаар нэвтэрч захиалгаа илгээнэ үү.</p>
+      </div>
+      <form id="orderForm" class="panel form-panel">
+        <label for="service">Үйлчилгээ сонгох</label>
+        <select id="service" required>
+          <option value="channels">Discord Channel Setup — 20,000₮</option>
+          <option value="bot">Custom Discord Bot — 40,000₮+</option>
+          <option value="website">Premium Website — 150,000₮+</option>
+          <option value="design">Graphic Design — 25,000₮+</option>
+        </select>
+        <label for="discord">Discord Username / Холбоо барих нэр</label>
+        <input id="discord" maxlength="80" placeholder="exampleuser" required>
+        <label for="details">Төслийн дэлгэрэнгүй</label>
+        <textarea id="details" rows="6" maxlength="2000" minlength="10" placeholder="Танд ямар үйлчилгээ хэрэгтэй вэ?" required></textarea>
+        <p class="hint">Таны Google нэр, имэйл хаяг хүсэлттэй холбогдон хадгалагдана. Эцсийн үнийг тохиролцоно.</p>
+        <button id="orderSubmit" type="submit" class="btn btn-primary full">Send Project Request ↗</button>
+      </form>
+    </section>
+
+    <section class="section container" id="orders">
+      <div class="section-heading">
+        <span class="eyebrow">PROJECT HISTORY</span>
+        <h2>Миний <span class="gradient-text">хүсэлтүүд</span></h2>
+      </div>
+      <div id="myOrders" class="order-list">Google-ээр нэвтэрч хүсэлтээ харна уу.</div>
+    </section>
+
+    <section class="section container" id="admin" hidden>
+      <div class="section-heading">
+        <span class="eyebrow">MANAGEMENT DASHBOARD</span>
+        <h2>NEXUS <span class="gradient-text">Admin Panel</span></h2>
+        <p>Хэрэглэгчдийн хүсэлт, захиалга болон Gmail хариуг удирдах.</p>
+      </div>
+      <div class="dashboard-stats">
+        <div class="dashboard-stat"><small>Нийт хүсэлт</small><strong id="totalOrders">0</strong></div>
+        <div class="dashboard-stat"><small>Шинэ хүсэлт</small><strong id="pendingOrders">0</strong></div>
+        <div class="dashboard-stat"><small>Дууссан</small><strong id="completedOrders">0</strong></div>
+      </div>
+      <div class="panel admin-panel">
+        <div class="admin-top"><h3>Project Requests</h3><button id="refreshAdmin" class="btn btn-outline">↻ Refresh</button></div>
+        <div id="adminOrders" class="order-list">Уншиж байна...</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><div class="logo">✦ NEXUS<span class="dot">.</span></div><p>Premium Digital Development Studio</p></div>
+      <div class="footer-info"><span>Developed by Enkhhuslen</span><span>Class 12-7 · © 2026 NEXUS</span></div>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
